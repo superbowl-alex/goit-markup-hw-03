@@ -16,6 +16,23 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section:not(:last-child) {
+  margin-bottom: 94px;
+}
 .list {
   list-style: none;
 }
@@ -24,12 +41,14 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 .subtitle {
   color: var(--title-text-color);
 }
 .button {
   font-family: inherit;
+  display: inline-block;
 }
 
 /* Лого */
@@ -84,6 +103,8 @@ body {
   color: var(--regular-white-color);
   background-color: var(--hero-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -91,6 +112,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .hero-button {
   color: var(--regular-white-color);
@@ -101,6 +123,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -108,6 +131,8 @@ body {
 }
 
 /* Наши преимущества */
+.features {
+}
 .features-title {
   display: none;
 }
@@ -115,26 +140,42 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* Чем мы занимаемся */
+.work {
 }
 /* Наша команда */
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-image {
+  margin-bottom: 30px;
 }
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Footer */
 .footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .logo {
+  margin-bottom: 20px;
 }
 .footer-list {
   font-style: normal;
@@ -149,6 +190,9 @@ body {
   color: var(--contact-text-color);
   text-decoration: none;
 }
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 /* Портфолио */
 /* Портфолио button */
@@ -161,6 +205,8 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: inherit;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .filtre-button.current,
 .filtre-button:hover,
