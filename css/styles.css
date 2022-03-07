@@ -35,6 +35,10 @@ ul {
 }
 .list {
   list-style: none;
+  padding-inline-start: 0;
+}
+.link {
+  text-decoration: none;
 }
 .title {
   color: var(--title-text-color);
@@ -58,7 +62,6 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  text-decoration: none;
 }
 .logo-header {
   color: var(--regular-black-color);
@@ -68,6 +71,16 @@ ul {
 }
 
 /* Header */
+.head-page {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 93px;
+}
+.nav {
+  display: flex;
+}
 .nav-list,
 .contact-list {
   font-weight: 500;
@@ -76,9 +89,17 @@ ul {
   letter-spacing: 0.02em;
 }
 /* Основная навигация */
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: var(--title-text-color);
-  text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -93,9 +114,16 @@ ul {
 }
 
 /* Контактная информация */
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-link {
   color: var(--primary-text-color);
-  text-decoration: none;
 }
 
 /* Основной баннер */
@@ -133,6 +161,12 @@ ul {
 /* Наши преимущества */
 .features {
 }
+.features-list {
+  display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
 .features-title {
   display: none;
 }
@@ -145,26 +179,43 @@ ul {
 /* Чем мы занимаемся */
 .work {
 }
+.work-list {
+  display: flex;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-image {
+  display: block;
+}
+
 /* Наша команда */
 .team {
   background-color: var(--secondary-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  text-align: center;
 }
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-image {
+  display: block;
   margin-bottom: 30px;
 }
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -188,7 +239,6 @@ ul {
 }
 .footer-link {
   color: var(--contact-text-color);
-  text-decoration: none;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
