@@ -57,6 +57,7 @@ ul {
 
 /* Лого */
 .logo {
+  display: block;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -77,6 +78,8 @@ ul {
 }
 .header .logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav {
   display: flex;
@@ -97,8 +100,8 @@ ul {
 }
 .nav-link {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 }
 .nav-link:hover,
@@ -121,8 +124,10 @@ ul {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 
@@ -245,7 +250,26 @@ ul {
 }
 
 /* Портфолио */
+/* Примеры работ */
+.examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.examples-title {
+  display: none;
+}
+
 /* Портфолио button */
+.filtre-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+.filtre-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filtre-button {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
@@ -265,9 +289,24 @@ ul {
   background-color: var(--accent-color);
 }
 
-/* Примеры работ */
-.examples-title {
-  display: none;
+/* Примеры */
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.example-item:nth-child(3n) {
+  margin-right: 0;
+}
+.example-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.example-image {
+  display: block;
 }
 .example-title {
   color: var(--title-text-color);
