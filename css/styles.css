@@ -9,6 +9,8 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
+  --header-border-line-color: #ececec;
+  --portfolio-border-line-color: #eeeeee;
 }
 body {
   background-color: var(--primary-background-color);
@@ -19,6 +21,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin-top: 0;
@@ -29,9 +34,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-.section:not(:last-child) {
-  margin-bottom: 94px;
 }
 .list {
   list-style: none;
@@ -72,6 +74,11 @@ ul {
 }
 
 /* Header */
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--header-border-line-color);
+}
 .head-page {
   display: flex;
   align-items: center;
@@ -165,6 +172,8 @@ ul {
 
 /* Наши преимущества */
 .features {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features-list {
   display: flex;
@@ -183,6 +192,7 @@ ul {
 }
 /* Чем мы занимаемся */
 .work {
+  padding-bottom: 94px;
 }
 .work-list {
   display: flex;
@@ -204,6 +214,10 @@ ul {
 .team-list {
   display: flex;
 }
+.team-item {
+  background-color: #fff;
+  padding-bottom: 30px;
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -221,7 +235,6 @@ ul {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
 }
 
 /* Footer */
@@ -295,7 +308,7 @@ ul {
   flex-wrap: wrap;
 }
 .example-item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -308,7 +321,20 @@ ul {
 .example-image {
   display: block;
 }
+.example-description {
+  padding: 20px 24px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--portfolio-border-line-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--portfolio-border-line-color);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--portfolio-border-line-color);
+}
 .example-title {
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
