@@ -14,11 +14,12 @@
   --item-gap: 30px;
 }
 body {
-  width: 1600px;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+  font-size: 14px;
+
+  /* letter-spacing: 0.03em; */
 }
 h1,
 h2,
@@ -49,10 +50,13 @@ ul {
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 .subtitle {
   color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  font-size: inherit;
 }
 .button {
   border: none;
@@ -67,6 +71,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 .logo-header {
   color: var(--regular-black-color);
@@ -95,7 +100,6 @@ ul {
 .nav-list,
 .contact-list {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -145,9 +149,11 @@ ul {
   background-color: var(--hero-background-color);
   text-align: center;
 }
+.hero > .container {
+  width: 696px;
+  padding: 0;
+}
 .hero-title {
-  padding-left: 237px;
-  padding-right: 237px;
   margin-bottom: var(--item-gap);
   font-weight: 900;
   font-size: 44px;
@@ -188,13 +194,12 @@ ul {
 }
 .features-subtitle {
   margin-bottom: 10px;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /* Чем мы занимаемся */
 .work {
@@ -236,16 +241,15 @@ ul {
   padding-top: var(--item-gap);
   padding-bottom: var(--item-gap);
   background-color: var(--regular-white-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 .team-subtitle {
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
 }
 .team-text {
-  font-size: 16px;
-  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 /* Footer */
 .footer {
@@ -259,8 +263,8 @@ ul {
 .footer-list {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .footer-link.adress {
   color: var(--regular-white-color);
@@ -284,8 +288,7 @@ ul {
 .filtre-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filtre-item:not(:last-child) {
   margin-right: 8px;
@@ -298,9 +301,9 @@ ul {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
+  letter-spacing: 0.03em;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: inherit;
 }
 .filtre-button.current,
 .filtre-button:hover,
@@ -326,15 +329,8 @@ ul {
 }
 .example-description {
   padding: 20px 24px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: var(--portfolio-border-line-color);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--portfolio-border-line-color);
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--portfolio-border-line-color);
+  border: 1px solid var(--portfolio-border-line-color);
+  border-top: 0;
 }
 .example-title {
   margin-bottom: 4px;
@@ -347,4 +343,5 @@ ul {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.89;
+  letter-spacing: 0.03em;
 }
