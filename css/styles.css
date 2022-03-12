@@ -150,8 +150,7 @@ ul {
   text-align: center;
 }
 .hero > .container {
-  width: 696px;
-  padding: 0;
+  width: 726px;
 }
 .hero-title {
   margin-bottom: var(--item-gap);
